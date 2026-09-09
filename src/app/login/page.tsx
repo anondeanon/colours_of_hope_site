@@ -18,7 +18,6 @@ const handleSubmit = async (e: React.FormEvent) => {
     setIsLoading(true);
 
     try {
-      // ТУТ ВИПРАВЛЕНО: додано const response = await
       const response = await fetch('http://144.31.25.196:8000/api/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
