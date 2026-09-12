@@ -18,7 +18,7 @@ const handleSubmit = async (e: React.FormEvent) => {
     setIsLoading(true);
 
     try {
-      const response = await fetch('https://144.31.25.196:8000/api/login', {
+      const response = await fetch('https://sun-untitled-fisheries-billy.trycloudflare.com/api/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ step, phone, code, password }),
